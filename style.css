@@ -1,94 +1,85 @@
-/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit;}
+
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-    background-color: #b2bec3;
-    
+  background-color: #b2bec3;
 }
 
 .box {
-    margin: 0 auto;
-    background-color: white;
-    width: 550px;
-    padding: 30px;
-    margin-top: 150px;
-    border-radius: 10px;
-    box-shadow: 5px 5px #888888;
-    font-family: "Nunito", sans-serif;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  width: 550px;
+  padding: 30px;
+  margin-top: 150px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
+  font-family: "Nunito", sans-serif;
 }
 
 .foto {
-    width: 150px;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid white;
+  width: 150px;
+  display: block;
+  position: absolute;
+  left: 470px;
+  top: -80px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 490px;
+  margin: 0 auto;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 .twi {
-    border: 1px solid #1da1f2;
-    box-sizing: border-box;
-    background-color: #1da1f2;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    width: 490px;
-    margin: 0 auto;
-    display: block;
-    color: white;
-    text-transform: uppercase;
+  border: 1px solid #1da1f2;
+  background-color: #1da1f2;
 }
 
 .fac {
-    border: 1px solid #3b5998;
-    box-sizing: border-box;
-    background-color: #3b5998;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    width: 490px;
-    margin: 0 auto;
-    display: block;
-    color: white;
-    text-transform: uppercase;
-    margin-top: 5px;
+  border: 1px solid #3b5998;
+  background-color: #3b5998;
+  margin-top: 5px;
 }
 
-.twi:active, 
-.twi:hover, 
+.twi:active,
+.twi:hover,
 .twi:focus {
-    background-color: #0b7bc1;
+  background-color: #0b7bc1;
 }
 
 .fac:active,
 .fac:hover,
 .fac:focus {
-    background-color: #2b406e;
+  background-color: #2b406e;
 }
-.box h1 {
-    color: #d63031;
-    font-weight: bold;
-    font-size: 36px;
+
+h1 {
+  color: #d63031;
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 p {
-    font-size: 15px;
-    font-family: "Nunito", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
 }
-
-
-/*
-BARVY:
-šedá na pozadí stránky:		 #b2bec3
-červená na hlavní nadpis:  #d63031
-
-tlačítko Twitter:					 #1da1f2
-tlačítko Twitter aktivní:	 #0b7bc1
-
-tlačítko Facebook:				 #3b5998
-tlačítko Facebook aktivní: #2b406e
-*/
-
